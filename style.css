@@ -1,0 +1,128 @@
+* {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  html {
+    --scrollbarBG: #fff;
+    --thumbBG: #90a4ae;
+  }
+  
+  body {
+    background: #ccc;
+    
+  }
+  body .card {
+    height: 600px;
+    width: 480px;
+    background-color: white;
+    margin-left: 450px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 12px 3px #ccc;
+    border-radius: 5px;
+  }
+  body .card #header {
+    height: 60px;
+    background: #382b9f;
+    
+  }
+  body .card #header h1 {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+  }
+  body .card #message-section::-webkit-scrollbar {
+    width: 10px;
+  }
+  body .card #message-section {
+    height: 440px;
+    padding: 0 6px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body .card #message-section::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body .card #message-section::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+  body .card #message-section #bot,
+  body .card #message-section #user {
+    position: relative;
+    bottom: 0;
+    min-height: 1px;
+    border: 0.15px solid #777;
+    background-color: #fff;
+    border-radius: 0px 10px 10px 15px;
+    padding: 12px;
+    margin: 10px 0;
+  }
+  body .card #message-section #user {
+    border: 1.5px solid #382b9f;
+    border-radius: 10px 0px 15px 15px;
+    background-color: #382b9f;
+    float: right;
+  }
+  body .card #message-section #user #user-response {
+    color: #fff;
+  }
+  body .card #message-section .message {
+    color: #000;
+    clear: both;
+    line-height: 12px;
+    font-size: 12px;
+    padding: 8px;
+    position: relative;
+    margin: 8px 0;
+    max-width: 85%;
+    word-wrap: break-word;
+    z-index: 2;
+  }
+  body .card #input-section {
+    z-index: 1;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    overflow: hidden;
+    height: 70px;
+    width: 100%;
+  }
+  body .card #input-section input {
+    color: #000;
+    min-width: 0.5px;
+    outline: none;
+    height: 45px;
+    width: 360px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #000 0.1px;
+  }
+  body .card .send {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    flex: 0 0 auto;
+    margin-left: 10px;
+    margin-right: 1px;
+    position: relative;
+    outline: none;
+  }
+  body .card .send .circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .card .send .circle i {
+    font-size: 40px;
+    margin-left: -1px;
+    margin-top: 1px;
+  }
